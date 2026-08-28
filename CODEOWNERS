@@ -1,0 +1,23 @@
+# CODEOWNERS
+#
+# Each line is a file pattern followed by one or more owners.
+# Owners are matched against the GitHub username or team name.
+# The last matching pattern takes precedence.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for all files
+* @abdulazizishaq212-prog
+
+# Smart contract source and upgrade-related runbook require contract-lead review
+src/contract.rs           @abdulazizishaq212-prog
+src/lib.rs                @abdulazizishaq212-prog
+docs/runbooks/contract-upgrade.md  @abdulazizishaq212-prog
+
+# Infrastructure runbooks require ops-team sign-off
+docs/runbooks/drift-reconciliation.md  @abdulazizishaq212-prog
+docs/runbooks/emergency-override.md    @abdulazizishaq212-prog
+docs/runbooks/rds-restore.md           @abdulazizishaq212-prog
+docs/runbooks/disaster-recovery.md     @abdulazizishaq212-prog
+
+# Security-sensitive files
+SECURITY.md               @abdulazizishaq212-prog
